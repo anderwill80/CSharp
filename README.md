@@ -62,8 +62,8 @@ Se a data de vencimento ainda não passou, os juros são R$ 0,00.
 **Pré-requisito:** [.NET SDK](https://dotnet.microsoft.com/download) instalado.
 
 ```bash
-git clone <URL-DO-REPOSITORIO>
-cd <NOME-DA-PASTA>
+git clone [https://github.com/anderwill80/CSharp)]
+cd <csharp>
 dotnet run
 ```
 
