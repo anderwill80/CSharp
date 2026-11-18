@@ -1,5 +1,5 @@
-Bom dia!
+Solução do desafio técnico da Target Sistemas para a vaga de Desenvolvedor de Sistemas Jr.
 
-Para executar o meu projeto, tem o executável disponível na pasta "Release", onde tem um menu principal para escolher qual desafio será chamado.
+Objetivo dessa etapa é avaliar lógica, organização e criatividade, e a maneira de como estruturar um projeto.
 
-Também poderá ser executado via Visual Studio, abrindo a solução.
+Devido 
