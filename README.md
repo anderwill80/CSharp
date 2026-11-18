@@ -1,5 +1,102 @@
-Solução do desafio técnico da Target Sistemas para a vaga de Desenvolvedor de Sistemas Jr.
+# Desafio Técnico – Target
 
-Objetivo dessa etapa é avaliar lógica, organização e criatividade, e a maneira de como estruturar um projeto.
+Solução em **C#** para o desafio técnico da Target. Um único programa de console, com um menu que dá acesso aos três desafios propostos.
 
-Devido 
+A solução foi mantida propositalmente simples, atendendo apenas ao que o enunciado pede.
+
+## Desafios
+
+| # | Desafio | Resumo |
+|---|---------|--------|
+| 1 | Cálculo de comissão | Lê as vendas (JSON) e calcula a comissão total de cada vendedor |
+| 2 | Movimentação de estoque | Lança entradas e saídas de produtos e informa o estoque final |
+| 3 | Cálculo de juros | Calcula os juros de um valor vencido, com base na data de vencimento |
+
+### 1. Cálculo de comissão
+
+Lê o JSON de vendas e, para cada venda, aplica a regra:
+
+| Valor da venda | Comissão |
+|----------------|----------|
+| Abaixo de R$ 100,00 | Sem comissão |
+| De R$ 100,00 até abaixo de R$ 500,00 | 1% |
+| A partir de R$ 500,00 | 5% |
+
+O programa soma as comissões por vendedor e exibe o total de cada um.
+
+**Resultado esperado com os dados do desafio:**
+
+| Vendedor | Comissão |
+|----------|----------|
+| João Silva | R$ 495,68 |
+| Maria Souza | R$ 465,95 |
+| Carlos Oliveira | R$ 379,37 |
+| Ana Lima | R$ 404,98 |
+
+### 2. Movimentação de estoque
+
+Carrega os produtos do JSON de estoque e permite lançar movimentações de **entrada** ou **saída**. Cada movimentação possui:
+
+- um **identificador único**;
+- uma **descrição** do tipo da movimentação (ex.: "Entrada", "Saída");
+- o produto, a quantidade e a data/hora.
+
+Ao final de cada lançamento, o programa mostra a **quantidade final em estoque** do produto movimentado.
+
+A saída é recusada se a quantidade pedida for maior que o estoque disponível.
+
+### 3. Cálculo de juros
+
+Recebe um **valor** e uma **data de vencimento**, e calcula os juros até a data de hoje, usando a taxa de **2,5% ao dia**:
+
+```
+juros = valor × 0,025 × dias_em_atraso
+```
+
+Se a data de vencimento ainda não passou, os juros são R$ 0,00.
+
+> Considerei juros simples (sem capitalização). O enunciado fala em "multa de 2,5% ao dia" e pede o "valor dos juros"; tratei como uma taxa diária aplicada ao valor original.
+
+## Como executar
+
+**Pré-requisito:** [.NET SDK](https://dotnet.microsoft.com/download) instalado.
+
+```bash
+git clone <URL-DO-REPOSITORIO>
+cd <NOME-DA-PASTA>
+dotnet run
+```
+
+Ao iniciar, aparece o menu:
+
+```
+=== DESAFIO TARGET ===
+1 - Cálculo de comissão
+2 - Movimentação de estoque
+3 - Cálculo de juros
+0 - Sair
+```
+
+Escolha a opção digitando o número correspondente e pressione Enter.
+
+## Exemplo de uso (desafio 3)
+
+```
+Informe o valor: 1000
+Informe a data de vencimento (dd/MM/yyyy): 10/11/2026
+Dias em atraso: 8
+Juros: R$ 200,00
+```
+
+*(Exemplo ilustrativo: o resultado depende da data em que o programa é executado.)*
+
+## Tecnologias
+
+- C#
+- .NET
+- Aplicação de console
+
+## Autor
+
+**<Seu Nome>**
+[LinkedIn](<seu-link>) · [GitHub](<seu-link>)
