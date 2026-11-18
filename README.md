@@ -70,25 +70,18 @@ dotnet run
 Ao iniciar, aparece o menu:
 
 ```
-=== DESAFIO TARGET ===
-1 - Cálculo de comissão
-2 - Movimentação de estoque
-3 - Cálculo de juros
+=======================================
+            TARGET SISTEMAS
+     SELECIONE O DESAFIO DESEJADO     
+=======================================
+1 - Desafio 1 - COMISSAO POR VENDEDOR
+2 - Desafio 2 - MOVIMENTACAO DE ESTOQUE
+3 - Desafio 3 - CALCULO DE JUROS 2.5%
 0 - Sair
+=======================================
+Digite a sua opção:
 ```
-
 Escolha a opção digitando o número correspondente e pressione Enter.
-
-## Exemplo de uso (desafio 3)
-
-```
-Informe o valor: 1000
-Informe a data de vencimento (dd/MM/yyyy): 10/11/2026
-Dias em atraso: 8
-Juros: R$ 200,00
-```
-
-*(Exemplo ilustrativo: o resultado depende da data em que o programa é executado.)*
 
 ## Tecnologias
 
@@ -98,5 +91,5 @@ Juros: R$ 200,00
 
 ## Autor
 
-**<Seu Nome>**
-[LinkedIn](<seu-link>) · [GitHub](<seu-link>)
+**Anderson William da Silva**
+**Desenvolvedor C# | SQL Server | ERP**
